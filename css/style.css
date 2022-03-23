@@ -1,0 +1,70 @@
+/* цвет основного текста #212121  */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* синий лого, акцент #2196F3 */
+/* черный лого #000000 */
+/* шрифт для лого font-family: 'Raleway', sans-serif; */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+.list {
+  list-style: none;
+}
+
+/* nav-logo */
+.nav-logo {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+.web {
+  color: #2196f3;
+}
+.studio {
+  color: #000000;
+}
+/* nav-links */
+
+.nav-links .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.nav-links .link:hover,
+.nav-links .link:focus {
+  color: var(--accent-color);
+}
+.nav-links .link.current {
+  color: var(--accent-color);
+}
+
+.sait-contacts .link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.sait-contacts .link:hover,
+.sait-contacts .link:focus {
+  color: var(--accent-color);
+}
+/* Hero */
+.hero-title {
+  color: var(--accent-color);
+}
+/* Section */
+.section-title {
+}
+/* Features */
+.feature-list .text {
+  color: var(--secondary-text-color);
+}
+.command-list .text {
+  color: var(--secondary-text-color);
+}
+/* Footer */
