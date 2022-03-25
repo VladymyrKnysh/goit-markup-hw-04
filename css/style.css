@@ -9,12 +9,15 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --white-bg-color: #ffffff;
+  --black-logo-color: #000000;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--white-bg-color);
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .list {
   list-style: none;
@@ -26,10 +29,10 @@ body {
   text-decoration: none;
 }
 .web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .studio {
-  color: #000000;
+  color: var(--black-logo-color);
 }
 /* nav-links */
 
@@ -54,17 +57,51 @@ body {
   color: var(--accent-color);
 }
 /* Hero */
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
-  color: var(--accent-color);
+  color: var(--white-color);
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 /* Section */
 .section-title {
 }
-/* Features */
+/* Преимущества */
 .feature-list .text {
   color: var(--secondary-text-color);
 }
+/* Чем занимаемся */
+
+/* Команда */
 .command-list .text {
   color: var(--secondary-text-color);
 }
+
 /* Footer */
+.footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+/* Логотип */
+.studio-white {
+  color: var(--white-color);
+}
+.address {
+  color: var(--white-color);
+}
+.address-list .link {
+  color: var(--secondary-white-color);
+  text-decoration: none;
+}
+/* фильтр портфолио */
+.button-list .button {
+  background-color: #f5f4fa;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+.title-list .type {
+  color: var(--secondary-text-color);
+}
