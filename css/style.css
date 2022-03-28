@@ -18,6 +18,7 @@ body {
   background-color: var(--white-bg-color);
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
@@ -27,6 +28,10 @@ body {
 .nav-logo {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 .web {
   color: var(--accent-color);
@@ -39,6 +44,10 @@ body {
 .nav-links .link {
   color: var(--primary-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav-links .link:hover,
 .nav-links .link:focus {
@@ -51,6 +60,10 @@ body {
 .sait-contacts .link {
   color: var(--secondary-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .sait-contacts .link:hover,
 .sait-contacts .link:focus {
@@ -62,23 +75,54 @@ body {
 }
 .hero-title {
   color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .button {
   background-color: var(--accent-color);
   color: var(--white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 /* Section */
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 /* Преимущества */
 .feature-list .text {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 /* Чем занимаемся */
 
 /* Команда */
+.comand-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
 .command-list .text {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* Footer */
@@ -91,17 +135,35 @@ body {
 }
 .address {
   color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 .address-list .link {
   color: var(--secondary-white-color);
   text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--accent-color);
+}
+
 /* фильтр портфолио */
 .button-list .button {
   background-color: #f5f4fa;
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
 }
+.button-list .button:hover,
+.button-list .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* примеры работ */
 .title-list .type {
   color: var(--secondary-text-color);
 }
