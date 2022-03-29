@@ -124,6 +124,9 @@ body {
   line-height: 1.2;
   text-align: center;
 }
+.comand {
+  background-color: #f5f4fa;
+}
 
 /* Footer */
 .footer {
@@ -152,18 +155,31 @@ body {
 }
 
 /* фильтр портфолио */
-.button-list .button {
+.filter {
   background-color: #f5f4fa;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-.button-list .button:hover,
-.button-list .button:focus {
+.filter:hover,
+.filter:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
 
 /* примеры работ */
-.title-list .type {
+.project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.type {
   color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
