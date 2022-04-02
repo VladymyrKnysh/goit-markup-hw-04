@@ -102,7 +102,7 @@ body {
   text-align: center;
 }
 /* Преимущества */
-.feature-list .text {
+ .features-text {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -111,22 +111,23 @@ body {
 /* Чем занимаемся */
 
 /* Команда */
-.comand-title {
+.comand {
+  background-color: #f5f4fa;
+}
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
 }
-.command-list .text {
+.team-text {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
 }
-.comand {
-  background-color: #f5f4fa;
-}
+
 
 /* Footer */
 .footer {
@@ -160,7 +161,7 @@ body {
 }
 
 /* фильтр портфолио */
-.filter {
+.filter-button {
   background-color: #f5f4fa;
   font-family: inherit;
   color: var(--primary-text-color);
@@ -170,8 +171,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.filter:hover,
-.filter:focus {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
