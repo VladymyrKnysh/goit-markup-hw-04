@@ -41,7 +41,7 @@ body {
 }
 /* nav-links */
 
-.nav-links .link {
+.nav-link {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -49,15 +49,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-links .link:hover,
-.nav-links .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
-.nav-links .link.current {
+.nav-link.current {
   color: var(--accent-color);
 }
 
-.sait-contacts .link {
+.contacts-link {
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -65,8 +65,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.sait-contacts .link:hover,
-.sait-contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 /* Hero */
@@ -97,15 +97,21 @@ body {
 }
 /* Section */
 .section-title {
-  font-weight: 700;
+  
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
 /* Преимущества */
+.features-title {
+  
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
  .features-text {
   color: var(--secondary-text-color);
-  font-weight: 400;
+  
   font-size: 14px;
   line-height: 1.7;
 }
@@ -123,7 +129,7 @@ body {
 }
 .team-text {
   color: var(--secondary-text-color);
-  font-weight: 400;
+ 
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -138,9 +144,12 @@ body {
 .studio-white {
   color: var(--white-color);
 }
+address {
+  font-style: normal;
+}
 .address {
   color: var(--white-color);
-  font-weight: 400;
+  
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
@@ -152,7 +161,7 @@ body {
 .address-list .link {
   color: var(--secondary-white-color);
   text-decoration: none;
-  font-weight: 400;
+  
   font-size: 14px;
   line-height: 1.7;
 }
@@ -180,13 +189,13 @@ body {
 }
 
 /* примеры работ */
-.project {
-  font-weight: 700;
+.work-title {
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.type {
+.work-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
