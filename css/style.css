@@ -23,6 +23,18 @@ body {
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 /* nav-logo */
 .nav-logo {
@@ -147,26 +159,26 @@ body {
 address {
   font-style: normal;
 }
-.address {
+.address-map {
   color: var(--white-color);
   
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
 }
-.address:hover,
-.address:focus {
+.address-map:hover,
+.address-map:focus {
   color: var(--accent-color)
 }
-.address-list .link {
+.address-link {
   color: var(--secondary-white-color);
   text-decoration: none;
   
   font-size: 14px;
   line-height: 1.7;
 }
-.address-list .link:hover,
-.address-list .link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
@@ -189,11 +201,16 @@ address {
 }
 
 /* примеры работ */
+.work-link {
+  text-decoration: none;
+}
 .work-title {
+  color: var(--primary-text-color);
 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  
 }
 .work-text {
   color: var(--secondary-text-color);
