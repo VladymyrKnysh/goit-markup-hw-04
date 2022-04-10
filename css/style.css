@@ -22,7 +22,17 @@ body {
 }
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -34,6 +44,16 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+/* ---------------------Page-header -------------------*/
+.page-header{
+  
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+
 }
 
 /* nav-logo */
@@ -69,6 +89,7 @@ body {
   color: var(--accent-color);
 }
 
+
 .contacts-link {
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -81,11 +102,14 @@ body {
 .contacts-link:focus {
   color: var(--accent-color);
 }
-/* Hero */
+/* --------------------Hero----------------------------------------- */
 .hero {
   background-color: #2f303a;
+  margin-bottom: 94px;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -106,30 +130,42 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
 }
+/* --------------------------------------------------- */
 /* Section */
 .section-title {
   
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 50px;
 }
-/* Преимущества */
+/* ------------------------Преимущества----------------- */
 .features-title {
-  
+  margin-bottom: 10px;
+  margin-top: 0;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
  .features-text {
-  color: var(--secondary-text-color);
+  margin-bottom: 0;
   
   font-size: 14px;
   line-height: 1.7;
+color: var(--secondary-text-color);
 }
-/* Чем занимаемся */
+.section {
+  margin-bottom: 94px;
+}
+/* -----------------------Чем занимаемся------------------------------- */
 
-/* Команда */
+
+
+
+/* --------------------------Команда---------------------------- */
 .comand {
   background-color: #f5f4fa;
 }
@@ -148,7 +184,7 @@ body {
 }
 
 
-/* Footer */
+/* ----------------------Footer----------------------------------- */
 .footer {
   background-color: rgba(47, 48, 58, 1);
 }
@@ -182,7 +218,7 @@ address {
   color: var(--accent-color);
 }
 
-/* фильтр портфолио */
+/* ---------------------фильтр портфолио---------------------------- */
 .filter-button {
   background-color: #f5f4fa;
   font-family: inherit;
@@ -200,7 +236,7 @@ address {
   color: var(--white-color);
 }
 
-/* примеры работ */
+/*-----------------примеры работ------------------------------------ */
 .work-link {
   text-decoration: none;
 }

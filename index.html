@@ -9,16 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <nav class="nav">
+    <header class="page-header">
+      <div class="container"><nav class="nav">
         <a href="" class="nav-logo">
-          <span class="web">Web</span><span class="studio">Studio</span></a
-        >
+          <span class="web">Web</span><span class="studio">Studio</span></a>
         <ul class="nav-links list">
           <li><a href="./index.html" class="nav-link current">Студия</a></li>
           <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
@@ -28,7 +28,8 @@
       <ul class="contacts list">
         <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
-      </ul>
+      </ul></div>
+     
     </header>
 
     <main>
@@ -42,89 +43,84 @@
       </section>
       <!-- Преимущества -->
       <section class="section">
-        <h2 class="visually-hidden">Особенности нашей работы</h2>
-        <ul class="features list">
-          <li class="features-item">
-            <h3 class="features-title">Внимание к деталям</h3>
-            <p class="features-text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-title">Пунктуальность</h3>
-            <p class="features-text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-title">Планирование</h3>
-            <p class="features-text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-title">Современные технологии</h3>
-            <p class="features-text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+            <h2 class="visually-hidden">Особенности нашей работы</h2>
+            <ul class="features list">
+              <li class="features-item">
+                <h3 class="features-title">Внимание к деталям</h3>
+                <p class="features-text">
+                  Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
+              </li>
+              <li class="features-item">
+                <h3 class="features-title">Пунктуальность</h3>
+                <p class="features-text">
+                  Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                </p>
+              </li>
+              <li class="features-item">
+                <h3 class="features-title">Планирование</h3>
+                <p class="features-text">
+                  Равным образом консультация с широким активом в значительной степени обуславливает.
+                </p>
+              </li>
+              <li class="features-item">
+                <h3 class="features-title">Современные технологии</h3>
+                <p class="features-text">
+                  Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                </p>
+              </li>
+            </ul>
+        </div>
+
+     
       </section>
       <!-- Чем занимаемся -->
       <section class="section">
-        <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="works list">
-          <li class="works-item">
-            <img src="./images/box1.jpg" alt="ПК на столе" width="370" height="294" />
-          </li>
-          <li class="works-item">
-            <img src="./images/box2.jpg" alt="Ноутбук на столе" width="370" height="294" />
-          </li>
-          <li class="works-item">
-            <img src="./images/box3.jpg" alt="Планшет в руке" width="370" height="294" />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="works list">
+            <li class="works-item">
+              <img src="./images/box1.jpg" alt="ПК на столе" width="370" height="294" />
+            </li>
+            <li class="works-item">
+              <img src="./images/box2.jpg" alt="Ноутбук на столе" width="370" height="294" />
+            </li>
+            <li class="works-item">
+              <img src="./images/box3.jpg" alt="Планшет в руке" width="370" height="294" />
+            </li>
+          </ul>
+        </div>
+       
       </section>
       <!-- Команда -->
       <section class="section comand">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="team list">
-          <li class="team-item">
-            <img src="./images/img.jpg" alt="Мужчина в бордовой рубашке" width="270" height="260" />
-            <h3 class="team-title">Игорь Демьяненко</h3>
-            <p lang="en" class="team-text">Product Designer</p>
-          </li>
-          <li class="team-item">
-            <img
-              src="./images/img(1).jpg"
-              alt="Девушка в тёмном костюме"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-title">Ольга Репина</h3>
-            <p lang="en" class="team-text">Frontend Developer</p>
-          </li>
-          <li class="team-item">
-            <img
-              src="./images/img(2).jpg"
-              alt="Мужчина в голубой рубашке"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-title">Николай Тарасов</h3>
-            <p lang="en" class="team-text">Marketing</p>
-          </li>
-          <li class="team-item">
-            <img
-              src="./images/img(3).jpg"
-              alt="Мужчина в тёмной футболке"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-title">Михаил Ермаков</h3>
-            <p lang="en" class="team-text">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="team list">
+            <li class="team-item">
+              <img src="./images/img.jpg" alt="Мужчина в бордовой рубашке" width="270" height="260" />
+              <h3 class="team-title">Игорь Демьяненко</h3>
+              <p lang="en" class="team-text">Product Designer</p>
+            </li>
+            <li class="team-item">
+              <img src="./images/img(1).jpg" alt="Девушка в тёмном костюме" width="270" height="260" />
+              <h3 class="team-title">Ольга Репина</h3>
+              <p lang="en" class="team-text">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img src="./images/img(2).jpg" alt="Мужчина в голубой рубашке" width="270" height="260" />
+              <h3 class="team-title">Николай Тарасов</h3>
+              <p lang="en" class="team-text">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img src="./images/img(3).jpg" alt="Мужчина в тёмной футболке" width="270" height="260" />
+              <h3 class="team-title">Михаил Ермаков</h3>
+              <p lang="en" class="team-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+        
       </section>
     </main>
     <!-- Футер -->
