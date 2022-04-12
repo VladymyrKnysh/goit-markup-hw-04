@@ -36,6 +36,9 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+ul{
+  padding-left: 0;
+}
 
 .visually-hidden {
   position: absolute;
@@ -50,9 +53,9 @@ p {
   margin: -1px;
 }
 /* ---------------------Page-header -------------------*/
-.page-header{
- 
-  margin-bottom: 94px;
+.page-header {
+  
+
 }
 .border {
   border-bottom: 1px solid #ECECEC;;
@@ -113,7 +116,7 @@ p {
 /* --------------------Hero----------------------------------------- */
 .hero {
   background-color: #2f303a;
-  margin-bottom: 94px;
+ 
 }
 .hero-title {
   margin-top: 0;
@@ -166,19 +169,20 @@ p {
 color: var(--secondary-text-color);
 }
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* -----------------------Чем занимаемся------------------------------- */
 
-
+.cut {
+  padding-top: 0;
+}
 
 
 /* --------------------------Команда---------------------------- */
 .comand {
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-bottom: 0;
+ padding-bottom: 0;
 }
 .team-link{
   margin-bottom: 30px;
@@ -201,6 +205,7 @@ color: var(--secondary-text-color);
 
 /* ----------------------Footer----------------------------------- */
 .footer {
+  padding: 60px 0;
   background-color: rgba(47, 48, 58, 1);
 }
 /* Логотип */
@@ -233,7 +238,8 @@ address {
   color: var(--accent-color);
 }
 
-/* ---------------------фильтр портфолио---------------------------- */
+/* --------projects-----фильтр портфолио------ */
+
 
 .filter{
   margin-bottom: 34px;
@@ -255,7 +261,7 @@ address {
   color: var(--white-color);
 }
 
-/*-----------------примеры работ------------------------------------ */
+/*-----------------примеры работ-------------- */
  
 .work-image {
   outline: 2px solid tomato;
@@ -277,7 +283,7 @@ address {
 }
 .work-text {
   margin-top: 4px;
-  margin-bottom: 94px;
+ 
   outline: 2px solid tomato;
   color: var(--secondary-text-color);
   font-size: 16px;
