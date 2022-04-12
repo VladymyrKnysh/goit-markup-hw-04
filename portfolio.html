@@ -14,88 +14,101 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <nav class="nav">
-        <a href="" class="nav-logo">
-          <span class="web">Web</span><span class="studio">Studio</span></a
-        >
-        <ul class="nav-links list">
-          <li><a href="./index.html" class="nav-link">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-          <li><a href="" class="nav-link">Контакты</a></li>
+    <header class="page-header border">
+      <div class="container">
+        <nav class="nav">
+          <a href="" class="nav-logo">
+            <span class="web">Web</span><span class="studio">Studio</span></a>
+          <ul class="nav-links list">
+            <li><a href="./index.html" class="nav-link">Студия</a></li>
+            <li><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+            <li><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contacts list">
-        <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>     
     </header>
     <main>
-      <!-- фильтр -->
+      <!---------------------- фильтр ---------------------------------->
       <section class="projects">
-        <h1 class="visually-hidden">Портфолио</h1>
-        <!--фильтр портфолио  -->
-        <ul class="filter list">
-          <li class="filter-item"><button type="button" class="filter-button">Все</button></li>
-          <li class="filter-item">
-            <button type="button" class="filter-button">Веб-сайты</button>
-          </li>
-          <li class="filter-item">
-            <button type="button" class="filter-button">Приложения</button>
-          </li>
-          <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
-          <li class="filter-item">
-            <button type="button" class="filter-button">Маркетинг</button>
-          </li>
-        </ul>
-        <!-- примеры работ -->
-        <ul class="work list">
-          <li>
-            <a href="" class="work-link"><img src="./images/img4.jpg" alt="проект 1" width="370" />
-            <h2 class="work-title">Технокряк</h2>
-            <p class="work-text">Веб-сайт</p></a>
-          </li>
-          <li>
-           <a href="" class="work-link"><img src="./images/img5.jpg" alt="проект 2" width="370" />
-          <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
-          <p class="work-text">Дизайн</p></a>
-          </li>
-          <li>
-           <a href="" class="work-link"><img src="./images/img6.jpg" alt="проект 3" width="370" />
-          <h2 class="work-title">Ресторан Seafood</h2>
-          <p class="work-text">Приложение</p></a>
-          </li>
-          <li>
-          <a href="" class="work-link"><img src="./images/img7.jpg" alt="проект 4" width="370" />
-          <h2 class="work-title">Проект Prime</h2>
-          <p class="work-text">Маркетинг</p></a>
-          </li>
-          <li>
-          <a href="" class="work-link"><img src="./images/img8.jpg" alt="проект 5" width="370" />
-          <h2 class="work-title">Проект Boxes</h2>
-          <p class="work-text">Приложение</p></a>
-          </li>
-          <li>
-           <a href="" class="work-link"><img src="./images/img9.jpg" alt="проект 6" width="370" />
-          <h2 class="work-title">Inspiration has no Borders</h2>
-          <p class="work-text">Веб-сайт</p></a>
-          </li>
-          <li>
-           <a href="" class="work-link"><img src="./images/img10.jpg" alt="проект 7" width="370" />
-          <h2 class="work-title">Издание Limited Edition</h2>
-          <p class="work-text">Дизайн</p></a>
-          </li>
-          <li>
-           <a href="" class="work-link"><img src="./images/img11.jpg" alt="проект 8" width="370" />
-          <h2 class="work-title">Проект LAB</h2>
-          <p class="work-text">Маркетинг</p></a>
-          </li>
-          <li>
-            <a href="" class="work-link"><img src="./images/img12.jpg" alt="проект 9" width="370" />
-            <h2 class="work-title">Growing Business</h2>
-            <p class="work-text">Приложение</p></a>
-          </li>
-        </ul>
+        <div class="container">
+            <h1 class="visually-hidden">Портфолио</h1>
+            <!--фильтр портфолио  -->
+            <ul class="filter list">
+              <li class="filter-item"><button type="button" class="filter-button">Все</button></li>
+              <li class="filter-item">
+                <button type="button" class="filter-button">Веб-сайты</button>
+              </li>
+              <li class="filter-item">
+                <button type="button" class="filter-button">Приложения</button>
+              </li>
+              <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
+              <li class="filter-item">
+                <button type="button" class="filter-button">Маркетинг</button>
+              </li>
+            </ul>
+            <!------------------------ примеры работ ----------------------------->
+            <ul class="work list">
+              <li>
+                <a href="" class="work-link"><img src="./images/img4.jpg" alt="проект 1" width="370" class="work-image"/>
+                  <h2 class="work-title">Технокряк</h2>
+                  <p class="work-text">Веб-сайт</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img5.jpg" alt="проект 2" width="370" class="work-image"/>
+                  <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="work-text">Дизайн</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img6.jpg" alt="проект 3" width="370" class="work-image"/>
+                  <h2 class="work-title">Ресторан Seafood</h2>
+                  <p class="work-text">Приложение</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img7.jpg" alt="проект 4" width="370" class="work-image"/>
+                  <h2 class="work-title">Проект Prime</h2>
+                  <p class="work-text">Маркетинг</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img8.jpg" alt="проект 5" width="370" class="work-image"/>
+                  <h2 class="work-title">Проект Boxes</h2>
+                  <p class="work-text">Приложение</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img9.jpg" alt="проект 6" width="370" class="work-image"/>
+                  <h2 class="work-title">Inspiration has no Borders</h2>
+                  <p class="work-text">Веб-сайт</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img10.jpg" alt="проект 7" width="370" class="work-image"/>
+                  <h2 class="work-title">Издание Limited Edition</h2>
+                  <p class="work-text">Дизайн</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img11.jpg" alt="проект 8" width="370" class="work-image"/>
+                  <h2 class="work-title">Проект LAB</h2>
+                  <p class="work-text">Маркетинг</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="work-link"><img src="./images/img12.jpg" alt="проект 9" width="370" class="work-image"/>
+                  <h2 class="work-title">Growing Business</h2>
+                  <p class="work-text">Приложение</p>
+                </a>
+              </li>
+            </ul>
+        </div>
+      
       </section>
     </main>
     <!-- футер -->

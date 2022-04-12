@@ -25,6 +25,10 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+img {
+  outline: 2px solid tomato;
+  display: block;
+}
 h1,
 h2,
 h3,
@@ -47,7 +51,11 @@ p {
 }
 /* ---------------------Page-header -------------------*/
 .page-header{
-  
+ 
+  margin-bottom: 94px;
+}
+.border {
+  border-bottom: 1px solid #ECECEC;;
 }
 .container {
   margin: 0 auto;
@@ -167,9 +175,16 @@ color: var(--secondary-text-color);
 
 /* --------------------------Команда---------------------------- */
 .comand {
-  background-color: #f5f4fa;
+  background-color: #F5F4FA;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
+}
+.team-link{
+  margin-bottom: 30px;
 }
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -219,6 +234,10 @@ address {
 }
 
 /* ---------------------фильтр портфолио---------------------------- */
+
+.filter{
+  margin-bottom: 34px;
+}
 .filter-button {
   background-color: #f5f4fa;
   font-family: inherit;
@@ -237,10 +256,18 @@ address {
 }
 
 /*-----------------примеры работ------------------------------------ */
+ 
+.work-image {
+  outline: 2px solid tomato;
+  
+}
 .work-link {
+  
   text-decoration: none;
 }
 .work-title {
+  margin-top: 20px;
+  outline: 2px solid tomato;
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -249,7 +276,11 @@ address {
   
 }
 .work-text {
+  margin-top: 4px;
+  margin-bottom: 94px;
+  outline: 2px solid tomato;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
+
