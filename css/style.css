@@ -26,7 +26,7 @@ body {
   margin-bottom: 0;
 }
 img {
-  outline: 2px solid tomato;
+ 
   display: block;
 }
 h1,
@@ -52,26 +52,30 @@ ul{
   clip-path: inset(50%);
   margin: -1px;
 }
-/* ---------------------Page-header -------------------*/
-.page-header {
-  
-
-}
-.border {
-  border-bottom: 1px solid #ECECEC;;
-}
 .container {
+  padding: 0 15px;
   margin: 0 auto;
   width: 1200px;
   outline: 2px solid tomato;
-
 }
+/* ---------------------Page-header -------------------*/
 
-/* nav-logo */
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+/*--------------------- nav-logo -----------*/
+.nav{
+  display: flex;
+  align-items: center;
+}
 .nav-logo {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -82,9 +86,20 @@ ul{
 .studio {
   color: var(--black-logo-color);
 }
-/* nav-links */
+/* --------------------nav-links------------------ */
+.nav-links{
+  display: flex;
+  margin-left: 93px;
+}
+.nav-item + .nav-item{
+  margin-left: 50px;
+}
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -99,7 +114,17 @@ ul{
 .nav-link.current {
   color: var(--accent-color);
 }
-
+/* ------------------contacts list ------------*/
+.contacts{
+  display: flex;
+  margin-left: auto;
+}
+.contacts-item + .contacts-item{
+  margin-left: 50px;
+}
+.contacts-item{
+  margin-left: auto;
+}
 
 .contacts-link {
   color: var(--secondary-text-color);
@@ -144,7 +169,7 @@ ul{
   border-radius: 4px;
   margin: 0 auto;
 }
-/* --------------------------------------------------- */
+/* ------------------------------------ */
 /* Section */
 .section-title {
   
@@ -154,6 +179,15 @@ ul{
   margin-bottom: 50px;
 }
 /* ------------------------Преимущества----------------- */
+.features{
+  display: flex;
+}
+.features-item{
+  width: 270px;
+}
+.features-item + .features-item{
+  margin-left: 30px;
+}  
 .features-title {
   margin-bottom: 10px;
   margin-top: 0;
@@ -173,6 +207,12 @@ color: var(--secondary-text-color);
   padding-bottom: 94px;
 }
 /* -----------------------Чем занимаемся------------------------------- */
+.works{
+  display: flex;
+}
+.works-item + .works-item{
+  margin-left: 30px;
+}
 
 .cut {
   padding-top: 0;
@@ -180,12 +220,28 @@ color: var(--secondary-text-color);
 
 
 /* --------------------------Команда---------------------------- */
+.team{
+  display: flex;
+}
 .comand {
   background-color: #F5F4FA;
- padding-bottom: 0;
+ 
+}
+.team-item + .team-item{
+  margin-left: 30px;
+}
+.team-item{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-name{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-link{
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .team-title {
   margin-bottom: 10px;
@@ -195,8 +251,8 @@ color: var(--secondary-text-color);
   text-align: center;
 }
 .team-text {
+  /* margin-bottom: 30px; */
   color: var(--secondary-text-color);
- 
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -214,6 +270,12 @@ color: var(--secondary-text-color);
 }
 address {
   font-style: normal;
+}
+.address-list{
+  margin-top: 20px;
+}
+.address-item + .address-item{
+  margin-top: 9px;
 }
 .address-map {
   color: var(--white-color);
@@ -242,9 +304,15 @@ address {
 
 
 .filter{
+  display: flex;
+  margin-left: 272px;
   margin-bottom: 34px;
+  }
+  .filter-item+.filter-item {
+    margin-left: 8px;
 }
 .filter-button {
+  display: block;
   background-color: #f5f4fa;
   font-family: inherit;
   color: var(--primary-text-color);
@@ -262,9 +330,26 @@ address {
 }
 
 /*-----------------примеры работ-------------- */
+.f{
+  background-color: rgb(235, 222, 113);
+}
+.work{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  
+}
+
+.work-item{
+/* width: calc((100%-60px) / 3); */
+margin: 15px;
+width: 370px;
+
+  border-bottom: 1px solid #EEEEEE; 
+}
  
 .work-image {
-  outline: 2px solid tomato;
+  
   
 }
 .work-link {
@@ -273,7 +358,7 @@ address {
 }
 .work-title {
   margin-top: 20px;
-  outline: 2px solid tomato;
+  
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -284,7 +369,7 @@ address {
 .work-text {
   margin-top: 4px;
  
-  outline: 2px solid tomato;
+  
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
