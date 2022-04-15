@@ -56,7 +56,7 @@ ul{
   padding: 0 15px;
   margin: 0 auto;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 /* ---------------------Page-header -------------------*/
 
@@ -330,34 +330,30 @@ address {
 }
 
 /*-----------------примеры работ-------------- */
-.f{
-  background-color: rgb(235, 222, 113);
-}
+
 .work{
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  
 }
 
 .work-item{
-/* width: calc((100%-60px) / 3); */
 margin: 15px;
-width: 370px;
-
-  border-bottom: 1px solid #EEEEEE; 
-}
- 
-.work-image {
-  
-  
+width: 370px; 
 }
 .work-link {
-  
   text-decoration: none;
 }
+.work-name{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+}
 .work-title {
-  margin-top: 20px;
+  
   
   color: var(--primary-text-color);
 
@@ -368,6 +364,7 @@ width: 370px;
 }
 .work-text {
   margin-top: 4px;
+  
  
   
   color: var(--secondary-text-color);
