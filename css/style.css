@@ -26,7 +26,7 @@ body {
   margin-bottom: 0;
 }
 img {
- 
+  max-width: 100%;
   display: block;
 }
 h1,
@@ -56,7 +56,7 @@ ul{
   padding: 0 15px;
   margin: 0 auto;
   width: 1200px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 /* ---------------------Page-header -------------------*/
 
@@ -141,11 +141,12 @@ ul{
 /* --------------------Hero----------------------------------------- */
 .hero {
   background-color: #2f303a;
+  padding: 200px 0;
  
 }
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -235,6 +236,7 @@ color: var(--secondary-text-color);
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
 }
 .team-name{
   padding-top: 30px;
@@ -270,8 +272,6 @@ color: var(--secondary-text-color);
 }
 address {
   font-style: normal;
-}
-.address-list{
   margin-top: 20px;
 }
 .address-item + .address-item{
@@ -305,8 +305,8 @@ address {
 
 .filter{
   display: flex;
-  margin-left: 272px;
-  margin-bottom: 34px;
+  justify-content: center;
+  margin-bottom: 50px;
   }
   .filter-item+.filter-item {
     margin-left: 8px;
@@ -345,9 +345,7 @@ width: 370px;
   text-decoration: none;
 }
 .work-name{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
