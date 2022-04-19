@@ -12,6 +12,8 @@
   --white-bg-color: #ffffff;
   --black-logo-color: #000000;
   --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --grey-bg-color: #F5F4FA;
+  --icon-primary-color: #AFB1B8;
 }
 
 body {
@@ -56,7 +58,11 @@ ul{
   padding: 0 15px;
   margin: 0 auto;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* ---------------------Page-header -------------------*/
 
@@ -118,6 +124,8 @@ ul{
 .contacts{
   display: flex;
   margin-left: auto;
+ 
+
 }
 .contacts-item + .contacts-item{
   margin-left: 50px;
@@ -138,6 +146,8 @@ ul{
 .contacts-link:focus {
   color: var(--accent-color);
 }
+
+
 /* --------------------Hero----------------------------------------- */
 .hero {
   background-color: #2f303a;
@@ -170,6 +180,22 @@ ul{
   border-radius: 4px;
   margin: 0 auto;
 }
+/* -----------------Overlay ---------------*/
+ .overlay {
+   height: 600px;
+   max-width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
+   background-image: linear-gradient(
+      
+      rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+         url('../images/overlay.jpg');
+   /* background-repeat: no-repeat; */
+   /* background-position: center; */
+  /* background-size: cover; */
+ }
 /* ------------------------------------ */
 /* Section */
 .section-title {
@@ -188,7 +214,19 @@ ul{
 }
 .features-item + .features-item{
   margin-left: 30px;
-}  
+} 
+.features-item::before {
+  display: block;
+  content: '';
+ 
+  height: 120px;
+  background-color: var(--grey-bg-color);
+  margin-bottom: 30px;
+  background-image: url('../images/antenna.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+} 
 .features-title {
   margin-bottom: 10px;
   margin-top: 0;
@@ -203,10 +241,7 @@ ul{
   line-height: 1.7;
 color: var(--secondary-text-color);
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 /* -----------------------Чем занимаемся------------------------------- */
 .works{
   display: flex;
@@ -240,7 +275,8 @@ color: var(--secondary-text-color);
 }
 .team-name{
   padding-top: 30px;
-  padding-bottom: 30px;
+  
+  
 }
 .team-link{
   /* margin-bottom: 30px; */
@@ -259,6 +295,35 @@ color: var(--secondary-text-color);
   line-height: 1.2;
   text-align: center;
 }
+.team-soc{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.team-soc-item + .team-soc-item {
+  margin-left: 10px;
+}
+.team-soc-link{
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-bg-color);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+fill: var(--icon-primary-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+
+}
+
+
+ /* -------------Постоянные клиенты--------------- */
 
 
 /* ----------------------Footer----------------------------------- */
