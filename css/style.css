@@ -218,15 +218,25 @@ ul{
 .features-item::before {
   display: block;
   content: '';
- 
+
   height: 120px;
   background-color: var(--grey-bg-color);
   margin-bottom: 30px;
-  background-image: url('../images/antenna.svg');
   background-repeat: no-repeat;
   background-position: center;
-
 } 
+.icon-antenna::before {
+  background-image: url('../images/antenna.svg'); 
+}
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
 .features-title {
   margin-bottom: 10px;
   margin-top: 0;
@@ -324,6 +334,29 @@ fill: var(--icon-primary-color);
 
 
  /* -------------Постоянные клиенты--------------- */
+.company{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.company-item + .company-item{
+  margin-left: 30px;
+}
+.company-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  border: 1px solid var(--icon-primary-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-bg-color);
+  fill: var(--icon-primary-color);
+}
+.company-link:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 
 /* ----------------------Footer----------------------------------- */
